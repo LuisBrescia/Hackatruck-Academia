@@ -27,11 +27,9 @@ A idéia do projeto, é desenvolver um aplicativo mobile para sistema IOS, onde 
 
 |ID    | Descrição do Requisito  | Prioridade | Status: |
 |------|-----------------------------------------|----|------|
-|RF-01| Corrigir respostas dissertativas para essas perguntas. | Média | :white_check_mark: |
-|RF-02| Navegar entre perguntas. | Média | :white_check_mark: |
-|RF-03| Criar perguntas relacionadas as áreas de conhecimento propostas. | Baixa | :x: |
-|RF-04| Questões organizadas aleatóriamente cada vez que o questionário é carregado. | Média | :x: |
-|RF-05| Exibir questões já respondidas, e as que faltam ser respondidas. | Média | :x: |
+|RF-01| Integração com um banco de dados onde haverá exercícios. | Média | :white_check_mark: |
+|RF-02| Demonstração gráfica de como realizar um exercício. | Média | :white_check_mark: |
+|RF-03| O usuário deverá ser capaz de criar e personalizar sua próprias listas de exercícios. | Baixa | :x: |
 
 ## Requisitos não funcionais
 |ID    | Descrição do Requisito  | Prioridade | Status: |
