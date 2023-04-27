@@ -1,0 +1,38 @@
+{
+  "id" : "P1"
+  "treino" : "PEITORAL"
+  "nome" : "Supino declinado com Halteres "
+}
+
+{
+  "id" : "D1"
+  "treino" : "DORSAL"
+  "nome" : "One Arm Row com Halteres"
+}
+{
+  "id" : "D2"
+  "treino" : "DORSAL"
+  "nome" : "Bent Over Row com Barra"
+}
+
+{
+  "id" : "B1"
+  "treino" : "BICEP"
+  "nome" : "Bícep curl com Barra W
+}
+{
+  "id" : "B2"
+  "treino" : "BICEP"
+  "nome" : "Bícep Curl com Halteres"
+}
+
+{
+  "id" : "T1"
+  "treino" : "TRICEP"
+  "nome" : "Trícep extension"
+}
+{
+  "id" : "T2"
+  "treino" : "TRICEP"
+  "nome" : "Trícep Deep"
+}
