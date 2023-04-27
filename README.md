@@ -12,7 +12,7 @@ A idéia do projeto, é desenvolver um aplicativo mobile para sistema IOS, onde 
 - [Vitor Lany Freitas Ferreira](https://www.linkedin.com/in/vitorlany)
 - [Nathan]()
 - [Pedro Marcio Oliveira Silveira](https://www.linkedin.com/in/pedromos16)
-- [Vitor José Lara Bastos](https://www.linkedin.com/in/vitorjose)
+- [Vitor José Lara Bastos](https://www.linkedin.com/in/vitor_jose)
 
 ## Instrutores:
 
