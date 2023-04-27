@@ -1,4 +1,4 @@
-# :weight_lifting: **Mobile Trainer** 
+# :weight_lifting: **Fit Life** 
 
 #### *Projeto desenvolvido durante o curso hackatruck, da IBM.*
 A idéia do projeto, é desenvolver um aplicativo mobile para sistema IOS, onde poderá ser consultado a forma correta de se realizar exercícios físicos na academia. 
