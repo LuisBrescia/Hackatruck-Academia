@@ -1,0 +1,226 @@
+[
+    {
+        "id": "db5ef3fea0aacbf8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6e241e1db55aae12",
+        "type": "cloudantplus in",
+        "z": "db5ef3fea0aacbf8",
+        "name": "",
+        "cloudant": "65d788d2cf7c3016",
+        "database": "fitlifedb",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 560,
+        "y": 280,
+        "wires": [
+            [
+                "30d1d6d66c02049e"
+            ]
+        ]
+    },
+    {
+        "id": "aec00d456871c65c",
+        "type": "http in",
+        "z": "db5ef3fea0aacbf8",
+        "name": "LER DO BANCO",
+        "url": "/getfitlife",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "6e241e1db55aae12"
+            ]
+        ]
+    },
+    {
+        "id": "46f0fff203d64fa9",
+        "type": "cloudantplus out",
+        "z": "db5ef3fea0aacbf8",
+        "name": "",
+        "cloudant": "65d788d2cf7c3016",
+        "database": "fitlifedb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 560,
+        "y": 380,
+        "wires": [
+            [
+                "d238a7459944f960"
+            ]
+        ]
+    },
+    {
+        "id": "30d1d6d66c02049e",
+        "type": "http response",
+        "z": "db5ef3fea0aacbf8",
+        "name": "RESPOSTA",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "312296ef5579d92a",
+        "type": "http in",
+        "z": "db5ef3fea0aacbf8",
+        "name": "INSERIR NO BANCO",
+        "url": "/postfitlife",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 280,
+        "y": 340,
+        "wires": [
+            [
+                "46f0fff203d64fa9"
+            ]
+        ]
+    },
+    {
+        "id": "d238a7459944f960",
+        "type": "http response",
+        "z": "db5ef3fea0aacbf8",
+        "name": "RESPOSTA",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "5042a96768de8693",
+        "type": "split",
+        "z": "db5ef3fea0aacbf8",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 450,
+        "y": 440,
+        "wires": [
+            [
+                "46f0fff203d64fa9"
+            ]
+        ]
+    },
+    {
+        "id": "02fc64136cc5bab5",
+        "type": "http in",
+        "z": "db5ef3fea0aacbf8",
+        "name": "INSERIR VÁRIOS",
+        "url": "/postfitlife/varios",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 420,
+        "wires": [
+            [
+                "5042a96768de8693"
+            ]
+        ]
+    },
+    {
+        "id": "cac5bb4f09c1fc9c",
+        "type": "http in",
+        "z": "db5ef3fea0aacbf8",
+        "name": "ATUALIZAR DADOS DO BANCO",
+        "url": "/putfitlife",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "46f0fff203d64fa9"
+            ]
+        ]
+    },
+    {
+        "id": "6681ac5d996ecbd8",
+        "type": "http in",
+        "z": "db5ef3fea0aacbf8",
+        "name": "ATUALIZAR VÁRIOS",
+        "url": "/putfitlife/varios",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 290,
+        "y": 460,
+        "wires": [
+            [
+                "5042a96768de8693"
+            ]
+        ]
+    },
+    {
+        "id": "38c9dbb2488032ed",
+        "type": "cloudantplus out",
+        "z": "db5ef3fea0aacbf8",
+        "name": "",
+        "cloudant": "65d788d2cf7c3016",
+        "database": "fitlifedb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 560,
+        "y": 520,
+        "wires": [
+            [
+                "28393beb58bb93a9"
+            ]
+        ]
+    },
+    {
+        "id": "e9525e0b75887706",
+        "type": "http in",
+        "z": "db5ef3fea0aacbf8",
+        "name": "DELETA DO BANCO",
+        "url": "/deletefitlife",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 290,
+        "y": 520,
+        "wires": [
+            [
+                "38c9dbb2488032ed"
+            ]
+        ]
+    },
+    {
+        "id": "28393beb58bb93a9",
+        "type": "http response",
+        "z": "db5ef3fea0aacbf8",
+        "name": "RESPOSTA",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "65d788d2cf7c3016",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-1oyyl44w0ka2aw9z3fvb53wag6o79wi8boxf0xsbnpr:6c078caec78a17bbd953a16fff300224@bbd3c0ee-d0c8-455b-bbd3-8d6d996c2c0a-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "",
+        "useapikey": true
+    }
+]
