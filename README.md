@@ -12,7 +12,7 @@ A idéia do projeto, é desenvolver um aplicativo mobile para sistema IOS, onde 
 ## Colaboradores:
 
 - [Luís Felipe Teixeira Dias Brescia]()
-- [Vitor Lany Freitas Ferreira]()
+- [Vitor Lany Freitas Ferreira](https://www.linkedin.com/in/vitorlany)
 - [Nathan]()
 - [Pedro]()
 - [Vitor]()
