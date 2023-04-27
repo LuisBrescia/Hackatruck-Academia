@@ -1,6 +1,3 @@
-# Hackatruck-Academia
-Projeto desenvolvido durante o curso hackatruck, da IBM.
-
 # :weight_lifting: **Mobile Trainer** 
 
 #### *Projeto desenvolvido durante o curso hackatruck, da IBM.*
