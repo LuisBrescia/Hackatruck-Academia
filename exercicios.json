@@ -5,6 +5,12 @@
 }
 
 {
+  "id" : "P2"
+  "treino" : "PEITORAL"
+  "nome" : "Supino com halteres"
+}
+
+{
   "id" : "D1"
   "treino" : "DORSAL"
   "nome" : "One Arm Row com Halteres"
@@ -35,4 +41,16 @@
   "id" : "T2"
   "treino" : "TRICEP"
   "nome" : "Trícep Deep"
+}
+
+{
+  "id" : "A1"
+  "treino" : "ABDOME"
+  "nome" : "Prancha de Cotovelo"
+}
+
+{
+  "id" : "A2"
+  "treino" : "ABDOME"
+  "nome" : "Elevação de pernas inclinado"
 }
