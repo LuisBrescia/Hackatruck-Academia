@@ -4,7 +4,7 @@
 A idéia do projeto, é desenvolver um aplicativo mobile para sistema IOS, onde poderá ser consultado a forma correta de se realizar exercícios físicos na academia. 
 
 ## **Tecnologias**
-`Swift UI` `Node-Red` `IBM Cloud` `ExercicesAPI`
+`Swift UI` `Node-Red` `IBM Cloud` `API Própria`
 
 ## Colaboradores:
 
@@ -40,4 +40,4 @@ A idéia do projeto, é desenvolver um aplicativo mobile para sistema IOS, onde 
 ## Instruções de Utilização:
 > Tenha um sistema IOS <br/>
 
-[Canva]()
+[API Própria]()
