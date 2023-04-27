@@ -16,9 +16,9 @@ A idéia do projeto, é desenvolver um aplicativo mobile para sistema IOS, onde 
 
 ## Instrutores:
 
-- [Edilson]()
-- [Fabrício]()
-- [Gabriel]()
+- [Edilson Almeida Souza]()
+- [Fabrício Araújo de Sousa]()
+- [Gabriel Fernandes Thomaz]()
 
 ## Requisitos Funcionais
 
