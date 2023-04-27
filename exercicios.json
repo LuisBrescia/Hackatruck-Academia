@@ -66,3 +66,57 @@
   "treino" : "GLÚTEO"
   "nome" : "Agachamento com halteres"
 }
+
+{
+  "id" : "PN1"
+  "treino" : "PANTURRILHA" 
+  "nome" : "Elevação de panturrilha em pé"
+}
+
+{
+  "id" : "PN2"
+  "treino" : "PANTURRILHA" 
+  "nome" : "Elevação de panturrilha no leg press"
+}
+
+{
+  "id" : "PN2"
+  "treino" : "PANTURRILHA" 
+  "nome" : "Elevação de panturrilha no leg press"
+}
+
+{
+  "id" : "PR1"
+  "treino" : "PERNA" 
+  "nome" : "Afundo"
+}
+
+{
+  "id" : "PR2"
+  "treino" : "PERNA" 
+  "nome" : "Stiff"
+}
+
+{
+  "id" : "PR2"
+  "treino" : "PERNA" 
+  "nome" : "Stiff"
+}
+
+{
+  "id" : "O1"
+  "treino" : "OMBRO" 
+  "nome" : "Encolhimento de ombros"
+}
+
+{
+  "id" : "O2"
+  "treino" : "OMBRO" 
+  "nome" : "Arnold press"
+}
+
+{
+  "id" : "O2"
+  "treino" : "OMBRO" 
+  "nome" : "Arnold press"
+}
