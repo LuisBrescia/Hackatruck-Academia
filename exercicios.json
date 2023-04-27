@@ -54,3 +54,15 @@
   "treino" : "ABDOME"
   "nome" : "Elevação de pernas inclinado"
 }
+
+{
+  "id" : "G1"
+  "treino" : "GLÚTEO"
+  "nome" : "Elevação pélvica"
+}
+
+{
+  "id" : "G2"
+  "treino" : "GLÚTEO"
+  "nome" : "Agachamento com halteres"
+}
