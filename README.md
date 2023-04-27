@@ -8,7 +8,7 @@ A idéia do projeto, é desenvolver um aplicativo mobile para sistema IOS, onde 
 
 ## Colaboradores:
 
-- [Luís Felipe Teixeira Dias Brescia]()
+- [Luís Felipe Teixeira Dias Brescia](https://www.linkedin.com/in/luisbrescia)
 - [Vitor Lany Freitas Ferreira](https://www.linkedin.com/in/vitorlany)
 - [Nathan]()
 - [Pedro]()
@@ -24,14 +24,17 @@ A idéia do projeto, é desenvolver um aplicativo mobile para sistema IOS, onde 
 
 |ID    | Descrição do Requisito  | Prioridade | Status: |
 |------|-----------------------------------------|----|------|
-|RF-01| Integração com um banco de dados onde haverá exercícios. | Média | :white_check_mark: |
+|RF-01| Integração com uma API que fornece informações sobre cada exercício físico. | Média | :white_check_mark: |
 |RF-02| Demonstração gráfica de como realizar um exercício. | Média | :white_check_mark: |
-|RF-03| O usuário deverá ser capaz de criar e personalizar sua próprias listas de exercícios. | Baixa | :x: |
+|RF-03| O usuário deverá ser capaz de criar e personalizar suas próprias listas de exercícios. | Baixa | :x: |
+|RF-04| Deverá ser possível buscar por um exercício específico. | Alta | :x: |
+|RF-05| Quando um exercício for aselecionado, o aplicativo mostrará como realiza-lo. | Alta | :x: |
 
 ## Requisitos não funcionais
 |ID    | Descrição do Requisito  | Prioridade | Status: |
 |------|-----------------------------------------|----|------|
-|RNF-03| Feedback deverá ser preciso. | Alta | :x: |
+|RNF-01| Feedback deverá ser preciso. | Alta | :x: |
+|RNF-02| As listas de exercícios do usuário deverão estar disponíveis offline. | Alta | :x: |
 
 
 ## Instruções de Utilização:
