@@ -14,6 +14,7 @@ struct PaginaExercicios: View {
             NavigationView {
                 
                 List {
+                    
                     Section("Superiores") {
                         NavigationLink("Costas") {}
                         NavigationLink("Peitoral") {}
