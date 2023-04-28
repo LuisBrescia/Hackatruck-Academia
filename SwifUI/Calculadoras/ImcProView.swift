@@ -3,6 +3,7 @@
 //
 //  Created by StudentBackup01 on 27/04/23.
 //
+import SwiftUI
 
 import SwiftUI
 
@@ -34,7 +35,6 @@ struct ImcProView: View {
     private func calculateImc() {
         let weightValue = weight.replacingOccurrences(of: ",", with: ".") // substitui "," por "."
         let heightValue = height.replacingOccurrences(of: ",", with: ".") // substitui "," por "."
-
         guard let weight = Double(weightValue), let height = Double(heightValue), weight > 0, height > 0 else {
             showAlert()
             return
@@ -50,12 +50,25 @@ struct ImcProView: View {
             return
         }
 
-        let leanWeight = weight * (100 - bodyFatPercentage) / 100 // calcula o peso magro, multiplicando o peso total pelo                 complemento da porcentagem de gordura corporal, e dividindo o resultado por 100
+        // calcula a massa magra baseado no sexo da pessoa
+        let leanWeight: Double
+        switch sex {
+        case 0: // homem
+            let heightInCm = height * 100 // converte altura de metros para centímetros
+            leanWeight = (1.10 * weight) - (128 * pow(weight / heightInCm, 2))
+        case 1: // mulher
+            let heightInCm = height * 100 // converte altura de metros para centímetros
+            leanWeight = (1.07 * weight) - (148 * pow(weight / heightInCm, 2))
+        default:
+            showAlert()
+            return
+        }
 
-        let adjustedWeight = leanWeight / 0.85 // calcula o peso ajustado, dividindo o peso magro pelo fator de correção 0,85
-
+        let adjustedWeight = leanWeight / 0.85 // calcula o peso ajustado, dividindo o peso
+        
         //Equação de Harris-Benedict e os diferentes níveis de atividade física. 
         let activityFactor: Double
+        
         switch activityLevel {
         case 0: // sedentário
             activityFactor = 1.2
