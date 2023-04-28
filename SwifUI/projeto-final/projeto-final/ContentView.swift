@@ -10,19 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Text("View Exemplo")
-                .tabItem {
-                    Label("Home", systemImage: "figure.run.circle.fill")
-                }
-            
-            Text("View Exemplo")
-                .tabItem {
-                    Label("Exercícios", systemImage: "dumbbell.fill")
-                }
-            
-            Text("View Exemplo")
+            PaginaFicha()
                 .tabItem {
                     Label("Ficha Treino", systemImage: "list.bullet.clipboard.fill")
+                }
+            
+            PaginaExercicios()
+                .tabItem {
+                    Label("Exercícios", systemImage: "dumbbell.fill")
                 }
             
             PaginaFerramentas()
