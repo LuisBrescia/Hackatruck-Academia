@@ -1,4 +1,4 @@
-//  ImcCalculatorView.swift
+//  ImcView.swift
 //  LoginScreen
 //
 //  Created by StudentBackup01 on 27/04/23.
@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-struct ImcCalculatorView: View {
+struct ImcView: View {
     @State private var weight = ""
     @State private var height = ""
     @State private var imc = "IMC"
@@ -105,8 +105,8 @@ struct ImcCalculatorView: View {
     }
 
 
-struct ImcCalculatorView_Previews: PreviewProvider {
+struct ImcView_Previews: PreviewProvider {
     static var previews: some View {
-        ImcCalculatorView()
+        ImcView()
     }
 }
