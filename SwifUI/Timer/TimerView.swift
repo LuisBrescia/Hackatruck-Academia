@@ -8,6 +8,7 @@ struct TimerView: View {
     @State private var alertShown = false
     @State private var backgroundToggle = true
     @State private var selectedTimerStyle = TimerStyle.round // padrão: cronômetro redondo
+    @State private var messageShown = false // nova propriedade de estado para controlar a exibição da mensagem personalizada
     
     private let soundPlayer = try? AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "notification_sound", ofType: "mp3") ?? ""))
     
@@ -41,6 +42,7 @@ struct TimerView: View {
                             if timeRemaining <= 0 {
                                 isRunning = false
                                 alertShown = true
+                                messageShown = true // exibir a mensagem personalizada quando o tempo acabar
                                 soundPlayer?.play()
                             } else {
                                 timeRemaining -= 0.01
@@ -53,6 +55,9 @@ struct TimerView: View {
             .frame(width: selectedTimerStyle == .round ? 300 : 200, height: selectedTimerStyle == .round ? 300 : 200)
             .background(backgroundColor)
             .clipShape(selectedTimerStyle == .round ? Circle() : RoundedRectangle(cornerRadius: 20))
+            .onTapGesture {
+                messageShown = false // ocultar a mensagem personalizada quando o usuário clicar na tela
+            } // adicionar o gesto de tap
             
             Slider(value: $timeRemaining, in: 1...3600, step: 1)
                 .padding()
@@ -71,26 +76,54 @@ struct TimerView: View {
                     .frame(width: 150, height: 50)
                     .background(Color.blue)
                     .foregroundColor(.white)
-                    .clipShape(Capsule())
-            }
-            
-            Picker(selection: $selectedTimerStyle, label: Text("Estilo do cronômetro")) {
-                ForEach(TimerStyle.allCases, id: \.self) { style in
-                    Text(style.rawValue.capitalized)
-                        .tag(style)
-                }
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding(.top)
-        }
-        .alert(isPresented: $alertShown) {
-            Alert(title: Text("Tempo acabou!"), message: Text("O tempo selecionado foi atingido."), dismissButton: .default(Text("OK")))
-        }
-    }
-}
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    }
+                    .padding()
 
-struct TimerView_Previews: PreviewProvider {
-    static var previews: some View {
-        TimerView()
-    }
-}
+    
+                   Picker(selection: $selectedTimerStyle, label: Text("Estilo do Timer")) {
+                            ForEach(TimerStyle.allCases, id: \.self) { style in
+                                Text(style.rawValue.capitalized).tag(style)
+                            }
+                        }
+                        .pickerStyle(SegmentedPickerStyle())
+                        .padding()
+                        }
+                        .alert(isPresented: $alertShown) {
+                            Alert(title: Text("Tempo esgotado!"), message: Text("Seu tempo acabou."), dismissButton: .default(Text("OK")))
+                        }
+                        .onChange(of: backgroundToggle) { newValue in
+                            if !isRunning {
+                                backgroundColor = newValue ? .white : .red
+                            }
+                        }
+                        .onChange(of: selectedTimerStyle) { _ in
+                            if !isRunning {
+                                backgroundColor = backgroundToggle ? .white : .red
+                            }
+                        }
+                        .onAppear {
+                            do {
+                                try AVAudioSession.sharedInstance().setCategory(.playback)
+                            } catch {
+                                print(error.localizedDescription)
+                            }
+                        }
+                        .onDisappear {
+                            if isRunning {
+                                isRunning = false
+                                timer.upstream.connect().cancel()
+                            }
+                        }
+                        .navigationBarTitle("Timer")
+                        .navigationBarItems(trailing: Toggle(isOn: $backgroundToggle) {
+                            Text("Fundo \(backgroundToggle ? "claro" : "escuro")")
+                        })
+                    }
+                    }
+
+                    struct TimerView_Previews: PreviewProvider {
+                        static var previews: some View {
+                            TimerView()
+                        }
+                    }
