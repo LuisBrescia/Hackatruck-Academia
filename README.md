@@ -10,7 +10,7 @@ A idéia do projeto, é desenvolver um aplicativo mobile para sistema IOS, onde 
 
 - [Luís Felipe Teixeira Dias Brescia](https://www.linkedin.com/in/luisbrescia)
 - [Vitor Lany Freitas Ferreira](https://www.linkedin.com/in/vitorlany)
-- [Nathan de Araújo Cunha Lisboa](https://www.linkedin.com/in/nathan-lisboa)
+- [Nathan de Araújo Cunha Lisboa](https://www.linkedin.com/in/nathan-lisboa-605857234)
 - [Pedro Marcio Oliveira Silveira](https://www.linkedin.com/in/pedro-marcio)
 - [Vitor José Lara Bastos](https://www.linkedin.com/in/vitor_jose)
 
