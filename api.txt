@@ -1,0 +1,106 @@
+	
+0	
+_id	"1bcc13bd0e4756e16d3221aa583b6c19"
+_rev	"1-5b4f276eab8e3fd0a65f5b180d46ec48"
+treino	"ABDOMEN"
+nome	"Prancha de Cotovelo"
+1	
+_id	"433fc4a03f74f587cd4688c56a78f6e4"
+_rev	"1-64d4b9efc55b1ad1d74b8bfa0387b874"
+treino	"OMBRO"
+nome	"Encolhimento de ombros"
+2	
+_id	"433fc4a03f74f587cd4688c56a78feaf"
+_rev	"1-a70f55663eb19259b60c83af490d9ec6"
+treino	"PERNA"
+nome	"Stiff"
+3	
+_id	"433fc4a03f74f587cd4688c56a790278"
+_rev	"1-e69fe0513a5cbc72da362e7b89c1e597"
+treino	"PEITORAL"
+nome	"Supino declinado com Halteres"
+4	
+_id	"50cab244e90dc77cbaac469837edc351"
+_rev	"1-53f75bc1b57c6307aad65a60bb2bfe46"
+treino	"PEITORAL"
+nome	"Supino com halteres"
+5	
+_id	"6c5ccd13adb88742950bfa9155cf525f"
+_rev	"1-b2d0ac2b844c99a581a2ad0caca506a2"
+treino	"GLUTEOS"
+nome	"Agachamento com halteres"
+6	
+_id	"783c0f07fa2f3871ab058cfb9cc31d18"
+_rev	"1-29709cbabebea41b169d970edae323d3"
+treino	"DORSAL"
+nome	"One Arm Row com Halteres"
+7	
+_id	"783c0f07fa2f3871ab058cfb9cc31d2c"
+_rev	"1-8fa8138738006eff4cae4f52c728882c"
+treino	"OMBRO"
+nome	"Arnold press"
+8	
+_id	"783c0f07fa2f3871ab058cfb9cc3200d"
+_rev	"1-d60fe14685498d759cd7091e39c8f59e"
+treino	"ABDOMEN"
+nome	"Elevação de pernas inclinado"
+9	
+_id	"783c0f07fa2f3871ab058cfb9cc32024"
+_rev	"1-9ca4525768cba83c07a27c5daefc11f1"
+treino	"BICEPS"
+nome	"Bícep Curl com Halteres"
+10	
+_id	"96ed64af69184f28c2fd63be7c18e5bc"
+_rev	"1-799a35de33bb8378dc78ec9ce8bfb77a"
+treino	"PANTURRILHA"
+nome	"Elevação de panturrilha no leg press"
+11	
+_id	"96ed64af69184f28c2fd63be7c18ea63"
+_rev	"1-799a35de33bb8378dc78ec9ce8bfb77a"
+treino	"PANTURRILHA"
+nome	"Elevação de panturrilha no leg press"
+12	
+_id	"b43b74e01105ce0eeadf484f3698acdc"
+_rev	"1-a70f55663eb19259b60c83af490d9ec6"
+treino	"PERNA"
+nome	"Stiff"
+13	
+_id	"b43b74e01105ce0eeadf484f3698b5b0"
+_rev	"1-58152a42112022008b712cac312211cb"
+treino	"TRICEPS"
+nome	"Trícep extension"
+14	
+_id	"b43b74e01105ce0eeadf484f3698bc70"
+_rev	"1-d6776b63ef8814e9651e3c5919f6038d"
+treino	"PERNA"
+nome	"Afundo"
+15	
+_id	"ebd65dc906b0d38c179e9a648577d4a5"
+_rev	"1-8fa8138738006eff4cae4f52c728882c"
+treino	"OMBRO"
+nome	"Arnold press"
+16	
+_id	"ec6ed91053f7ec3e57599379f64e60f3"
+_rev	"1-2cbfe04c2dc0d4910bdd79ab9230cb7d"
+treino	"BICEPS"
+nome	"Bícep curl com Barra W"
+17	
+_id	"ec6ed91053f7ec3e57599379f64e7053"
+_rev	"1-c30e6089646d4680f7d11b7341e11bff"
+treino	"PANTURRILHA"
+nome	"Elevação de panturrilha em pé"
+18	
+_id	"ff625e512f6491ed78d37612a0207728"
+_rev	"1-6eeffcffbebe72eff0045b0e009fd412"
+treino	"TRICEPS"
+nome	"Trícep Deep"
+19	
+_id	"ff625e512f6491ed78d37612a020843f"
+_rev	"1-3fcea4c6ca314a1c02721a9a51b618fd"
+treino	"GLUTEOS"
+nome	"Elevação pélvica"
+20	
+_id	"ffb4d5aefb39578cd627f4db2a80104e"
+_rev	"1-090f6aad438343482134e789685fe0db"
+treino	"DORSAL"
+nome	"Bent Over Row com Barra"
