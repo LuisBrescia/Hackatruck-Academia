@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct Exercicios: View {
+    
+    @State var searchText = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationView {
+            List {
+                Section("Superiores") {
+                    NavigationLink("Costas") {}
+                    NavigationLink("Peitoral") {}
+                    NavigationLink("Ombros") {}
+                    NavigationLink("Tríceps") {}
+                    NavigationLink("Antebraço") {}
+                    NavigationLink("Bíceps") {}
+                }
+                
+                Section("Inferiores") {
+                    NavigationLink("Quadríceps") {}
+                    NavigationLink("Panturrilha") {}
+                    NavigationLink("Glúteos") {}
+                }
+                
+                Section("Outros") {
+                    NavigationLink("Abdômen") {}
+                }
+            }
+            .navigationTitle("Exercícios")
+            .searchable(text: $searchText)
+            
+        }
     }
 }
 
