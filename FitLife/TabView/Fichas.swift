@@ -5,7 +5,8 @@ import SwiftUI
 
 struct Fichas: View {
     
-    var resposta = [
+    // Vai salvar todas as fichas, cada ficha funciona como um vetor de exercícios
+    var ListaFicha = [
         Ficha(
             nome: "Dia A - Peito, Triceps e Ombros",
             exercicios: [
@@ -34,23 +35,28 @@ struct Fichas: View {
     
     var body: some View {
         NavigationView {
-            List(resposta, id: \.self) { ficha in
+            // Vai printar na tela todas as fichas salvas
+            List(ListaFicha, id: \.self) { ficha in
+                // Quando elemento for ativado
                 NavigationLink(ficha.nome) {
-                    ListaExercios(exercicios: ficha.exercicios)
+                    // Chamará outra página passando a ficha em questão como parametro
+                    ExibeFicha(exercicios: ficha.exercicios)
                 }
             }.navigationTitle("Ficha")}
     }
 }
 
+// Carregar página com as fichas salvas
 struct Fichas_Previews: PreviewProvider {
     static var previews: some View {
         Fichas()
     }
 }
 
-struct ListaExercios: View {
-    @State var exercicios: [Exercicio]
+// Carrega uma ficha
+struct ExibeFicha: View {
     
+    @State var exercicios: [Exercicio]
     var body: some View {
         ScrollView {
             ForEach(exercicios, id: \.self) { exercicio in
@@ -61,29 +67,6 @@ struct ListaExercios: View {
         }
         .ignoresSafeArea()
         .frame(width: .infinity)
-    }
-}
-
-struct ListaExercios_Previews: PreviewProvider {
-    static var previews: some View {
-        let exercicios = [
-            Exercicio(
-                nome: "Rosca reta",
-                series: 3,
-                carga: 15,
-                anotacao: "Anotação",
-                foto: "https://grandeatleta.com.br/wp-content/uploads/2018/07/rosca-direta-barra-reta-ou-w.jpg"
-            ),
-            Exercicio(
-                nome: "Rosca reta direta",
-                series: 3,
-                carga: 15,
-                anotacao: "Anotação",
-                foto: "https://grandeatleta.com.br/wp-content/uploads/2018/07/rosca-direta-barra-reta-ou-w.jpg"
-            )
-        ]
-        ListaExercios(exercicios: exercicios)
-
     }
 }
 
