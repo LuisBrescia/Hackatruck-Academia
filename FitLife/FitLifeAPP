@@ -1,0 +1,12 @@
+// Somente para iniciar o aplicativo
+
+import SwiftUI
+
+@main
+struct FitLifeApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
