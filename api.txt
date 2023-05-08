@@ -1,4 +1,3 @@
-	
 0	
 _id	"1bcc13bd0e4756e16d3221aa583b6c19"
 _rev	"1-5b4f276eab8e3fd0a65f5b180d46ec48"
