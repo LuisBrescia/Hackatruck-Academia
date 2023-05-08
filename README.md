@@ -8,7 +8,7 @@ A idéia do projeto, é desenvolver um aplicativo mobile para sistema IOS, onde 
 
 ## Colaboradores:
 
-- [Luís Felipe Teixeira Dias Brescia](https://www.linkedin.com/in/luis-felipe-brescia)
+- [Luís Felipe Teixeira Dias Brescia](https://www.linkedin.com/in/luis-brescia)
 - [Vitor Lany Freitas Ferreira](https://www.linkedin.com/in/vitorlany)
 - [Nathan de Araújo Cunha Lisboa](https://www.linkedin.com/in/nathan-lisboa)
 - [Pedro Marcio Oliveira Silveira](https://www.linkedin.com/in/pedro-marcio)
