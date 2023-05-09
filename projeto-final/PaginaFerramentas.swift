@@ -34,7 +34,7 @@ struct PaginaFerramentas: View {
     var body: some View {
         
         let imc = peso/(altura*altura)
-        NavigationStack {
+
             List {
                 Section {
                     NavigationLink {
@@ -135,7 +135,6 @@ struct PaginaFerramentas: View {
             }
             .navigationTitle("Ferramentas")
         }
-    }
 }
 
 struct PaginaFerramentas_Previews: PreviewProvider {
