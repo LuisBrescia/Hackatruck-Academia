@@ -6,7 +6,7 @@ struct TimerView: View {
     @State var selectedTime = 0
     @State var timerPaused = true
     @State private var audioPlayer: AVAudioPlayer!
-    @State var showPicker = false
+    @State private var showPicker = false
     @State var alarmEnabled = true
     
     func formatTime(_ time: Int) -> String {
