@@ -28,29 +28,25 @@ struct Ferramentas: View {
                                 Text("Vitor")
                                     .font(.title2)
                                     .fontWeight(.medium)
-                                
-                                HStack {
-                                    Text("2,00m")
-                                    Text("-")
-                                    Text("134kg")
-                                }
+                                HStack { Text("2,00m - 134kg") }
                             }
                         }
                     }
                 }
                 
+                // CALCULADORAS
                 Section(header: Text("Calculadoras")) {
                     NavigationLink("Taxa Basal") {}
-                    NavigationLink("IMC") {}
+                    NavigationLink("IMC") {CalculadoraIMC()}
+                    NavigationLink("IMC PRO") {ProCalculadoraIMC()}
                     NavigationLink("Água") {}
                 }
-                
+                // TREINO
                 Section(header: Text("Treino")) {
-                    NavigationLink("Timmer") {}
+                    NavigationLink("Timer") {TimerView()}
                     NavigationLink("Contador de Séries") {}
                 }
-            }
-            .navigationTitle("Ferramentas")
+            }.navigationTitle("Ferramentas")
         }
     }
 }
