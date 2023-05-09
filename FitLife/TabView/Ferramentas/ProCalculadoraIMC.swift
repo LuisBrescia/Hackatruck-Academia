@@ -169,7 +169,7 @@ struct ProCalculadoraIMC: View {
                 
                 Spacer()
             }.padding()
-        }.background(background.edgesIgnoringSafeArea(.all))
+        }.background(background.edgesIgnoringSafeArea(.all)).toolbar(.hidden, for: .tabBar)
     }
 }
 
