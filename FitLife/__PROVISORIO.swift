@@ -1,5 +1,5 @@
 // Nesse arquivo será declarado as classes utilizadas
-
+/*
 import Foundation
 
 struct Exercicio: Hashable {
@@ -14,3 +14,4 @@ struct Ficha: Hashable {
     var nome: String
     var exercicios: [Exercicio]
 }
+*/
