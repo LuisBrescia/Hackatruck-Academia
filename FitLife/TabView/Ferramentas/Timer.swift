@@ -19,7 +19,7 @@ struct TimerView: View {
 
         ZStack{
             
-            LinearGradient(gradient: Gradient(colors: [.white, .white, .gray]), startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+            LinearGradient(gradient: Gradient(colors: [.white]), startPoint: .top, endPoint: .bottom).ignoresSafeArea()
             VStack {
                 
                 Text("Timer")
