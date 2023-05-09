@@ -5,8 +5,7 @@ struct TimerView: View {
     @State var timeRemaining = 50
     @State var selectedTime = 0
     @State var timerPaused = true
-    @State var showPicker = false
-    private let soundPlayer = try? AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "alarm", ofType: "mp3") ?? ""))
+    @State private var audioPlayer: AVAudioPlayer!
     @State var alarmEnabled = true
     
     func formatTime(_ time: Int) -> String {
@@ -35,8 +34,17 @@ struct TimerView: View {
                             timeRemaining -= 1
                         } else if timeRemaining == 0 {
                             timerPaused = true
-                            if alarmEnabled, let soundPlayer = soundPlayer {
-                                soundPlayer.play()
+                            if alarmEnabled {
+                                guard let soundFile = NSDataAsset (name: "alarm") else{
+                                    print("@ Could not read file named \("alarm")")
+                                    return
+                                }
+                                do {
+                                    audioPlayer = try AVAudioPlayer (data: soundFile.data)
+                                    audioPlayer.play()
+                                } catch {
+                                    print("@ERROR: \(error.localizedDescription) creating audioPlayer.")
+                                }
                             }
                         }
                     }
@@ -119,6 +127,7 @@ struct TimerView: View {
         selectedTime = 0
         timerPaused = true
         showPicker = false
+        audioPlayer.pause()
     }
     
     struct TimerView_Previews: PreviewProvider {
