@@ -4,6 +4,8 @@ import SwiftUI
 
 struct TelaLogin: View {
     
+    //variavaeis
+    
     @State private var isPresented = false
     @State private var isPasswordShown = false
     @State private var username = ""
@@ -14,6 +16,7 @@ struct TelaLogin: View {
     
     var body: some View {
         NavigationView {
+            //gera a página 
             ZStack {
                 LinearGradient(gradient: Gradient(colors: [.white]), startPoint: .top, endPoint: .bottom).ignoresSafeArea()
                 
