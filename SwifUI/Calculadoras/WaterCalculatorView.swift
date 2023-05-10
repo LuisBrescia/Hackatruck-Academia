@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct WaterCalculatorView: View {
+    
+    //variaveis
+    
     @State private var weight = ""
     @State private var waterIntakeString = "0"
     
@@ -65,6 +68,8 @@ struct WaterCalculatorView: View {
             .padding(.top, 50)
         }
     }
+    
+    //calculadora em si
     
     private func calculateWaterIntake() -> String {
         if let weight = Float(weight.replacingOccurrences(of: ",", with: ".")) {
