@@ -8,6 +8,9 @@ import SwiftUI
 import SwiftUI
 
 struct ImcProView: View {
+    
+    //variaveis
+    
     @State private var weight = ""
     @State private var height = ""
     @State private var age = ""
@@ -19,6 +22,8 @@ struct ImcProView: View {
 
     private var activityLevels = ["Sedentário", "Levemente ativo", "Moderadamente ativo", "Muito ativo", "Extremamente ativo"]
 
+    //verifica se é válido
+    
     private var isValidInput: Bool {
         if let weight = Double(weight), let height = Double(height), weight > 0, height > 0 {
             return true
@@ -88,6 +93,8 @@ struct ImcProView: View {
 
         let adjustedImc = adjustedWeight / pow(adjustedHeight, 2) // calcula o IMC ajustado, dividindo o peso ajustado pela                 altura ajustada ao quadrado
         
+        //dá uma cor para cada categoria
+        
         switch adjustedImc {
         case 0...18.5:
             background = Color("Baixo peso")
@@ -106,6 +113,8 @@ struct ImcProView: View {
     
     var body: some View {
         ZStack{
+            
+            //exibe a calculadora
             
             VStack {
                 Text("Calculadora de IMC")
