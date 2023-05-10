@@ -1,105 +1,121 @@
+		
 0	
 _id	"1bcc13bd0e4756e16d3221aa583b6c19"
-_rev	"1-5b4f276eab8e3fd0a65f5b180d46ec48"
+_rev	"4-2b14d38ccdd55c39e06942b3db5a0437"
 treino	"ABDOMEN"
 nome	"Prancha de Cotovelo"
+img	"https://images.squarespace-cdn.com/content/v1/5ffcea9416aee143500ea103/1638325092644-0NE7J321JDL0J0SWEEIT/Prone%2BPlank+%281%29.png"
 1	
 _id	"433fc4a03f74f587cd4688c56a78f6e4"
-_rev	"1-64d4b9efc55b1ad1d74b8bfa0387b874"
+_rev	"3-b1190de7a3e72f484d9c2ad0dd1ddc3e"
 treino	"OMBRO"
 nome	"Encolhimento de ombros"
+img	"https://treinomestre.com.br/wp-content/uploads/2017/11/fazer-o-treino-de-trapezio-separado-.jpg"
 2	
 _id	"433fc4a03f74f587cd4688c56a78feaf"
-_rev	"1-a70f55663eb19259b60c83af490d9ec6"
+_rev	"2-fe28b0853b10ac2d24d7e7924081772d"
 treino	"PERNA"
 nome	"Stiff"
+img	"https://www.bodybuildingmealplan.com/wp-content/uploads/Stiff-Leg-Deadlift-Muscles-Worked-scaled-e1641407183734.jpg"
 3	
 _id	"433fc4a03f74f587cd4688c56a790278"
-_rev	"1-e69fe0513a5cbc72da362e7b89c1e597"
+_rev	"2-086ffa01229c320e52f5ff4dc75bbf6e"
 treino	"PEITORAL"
 nome	"Supino declinado com Halteres"
+img	"https://ginasiovirtual.com/wp-content/uploads/2021/01/press-peito-declinado-ginasiovirtual.jpg"
 4	
 _id	"50cab244e90dc77cbaac469837edc351"
-_rev	"1-53f75bc1b57c6307aad65a60bb2bfe46"
+_rev	"2-76875d56223c8dd1cb5982582d40e287"
 treino	"PEITORAL"
 nome	"Supino com halteres"
+img	"https://e7.pngegg.com/pngimages/732/107/png-clipart-bench-press-dumbbell-exercise-muscle-chest-muscle-angle-sports-equipment.png"
 5	
 _id	"6c5ccd13adb88742950bfa9155cf525f"
-_rev	"1-b2d0ac2b844c99a581a2ad0caca506a2"
+_rev	"2-35fd5dbeb0aae89216e197395a6c3293"
 treino	"GLUTEOS"
 nome	"Agachamento com halteres"
+img	"https://ginasiovirtual.com/wp-content/uploads/2021/06/Agachamento-com-um-halter.jpg"
 6	
 _id	"783c0f07fa2f3871ab058cfb9cc31d18"
-_rev	"1-29709cbabebea41b169d970edae323d3"
+_rev	"2-a64b618f0806e61c63896ae522e6c396"
 treino	"DORSAL"
 nome	"One Arm Row com Halteres"
+img	"https://i.pinimg.com/564x/49/32/7c/49327c3beea0f5eeb7e0c9158b99ada9.jpg"
 7	
-_id	"783c0f07fa2f3871ab058cfb9cc31d2c"
-_rev	"1-8fa8138738006eff4cae4f52c728882c"
-treino	"OMBRO"
-nome	"Arnold press"
-8	
 _id	"783c0f07fa2f3871ab058cfb9cc3200d"
-_rev	"1-d60fe14685498d759cd7091e39c8f59e"
+_rev	"2-23ddf4cafe5bc5644a5c3c8ab761a237"
 treino	"ABDOMEN"
 nome	"Elevação de pernas inclinado"
-9	
+img	"https://weighttraining.guide/wp-content/uploads/2016/05/incline-straight-leg-hip-raise-resized.png"
+8	
 _id	"783c0f07fa2f3871ab058cfb9cc32024"
-_rev	"1-9ca4525768cba83c07a27c5daefc11f1"
+_rev	"2-a810d47bc7ed99bea511b2cc782b2aa4"
 treino	"BICEPS"
 nome	"Bícep Curl com Halteres"
-10	
+img	"https://julienquaglierini.com/wp-content/uploads/2018/05/curl-haltere.jpg"
+9	
 _id	"96ed64af69184f28c2fd63be7c18e5bc"
-_rev	"1-799a35de33bb8378dc78ec9ce8bfb77a"
+_rev	"2-4e0fc0c8d705d6cb5608fbe755d18b4b"
 treino	"PANTURRILHA"
 nome	"Elevação de panturrilha no leg press"
-11	
+img	"https://grandeatleta.com.br/wp-content/uploads/2018/07/panturrilha-no-leg-press.jpg"
+10	
 _id	"96ed64af69184f28c2fd63be7c18ea63"
-_rev	"1-799a35de33bb8378dc78ec9ce8bfb77a"
+_rev	"2-4e0fc0c8d705d6cb5608fbe755d18b4b"
 treino	"PANTURRILHA"
 nome	"Elevação de panturrilha no leg press"
-12	
+img	"https://grandeatleta.com.br/wp-content/uploads/2018/07/panturrilha-no-leg-press.jpg"
+11	
 _id	"b43b74e01105ce0eeadf484f3698acdc"
-_rev	"1-a70f55663eb19259b60c83af490d9ec6"
+_rev	"2-fe28b0853b10ac2d24d7e7924081772d"
 treino	"PERNA"
 nome	"Stiff"
-13	
+img	"https://www.bodybuildingmealplan.com/wp-content/uploads/Stiff-Leg-Deadlift-Muscles-Worked-scaled-e1641407183734.jpg"
+12	
 _id	"b43b74e01105ce0eeadf484f3698b5b0"
-_rev	"1-58152a42112022008b712cac312211cb"
+_rev	"2-177611c4d4b140633f05924290ab9d7c"
 treino	"TRICEPS"
 nome	"Trícep extension"
-14	
+img	"https://www.fitliferegime.com/wp-content/uploads/2021/06/Cable-overhead-triceps-extension.jpg"
+13	
 _id	"b43b74e01105ce0eeadf484f3698bc70"
-_rev	"1-d6776b63ef8814e9651e3c5919f6038d"
+_rev	"2-c3c5fd9ef950cd6d571610056a365174"
 treino	"PERNA"
 nome	"Afundo"
-15	
+img	"https://treinomestre.com.br/wp-content/uploads/2018/06/exercicio-afundo-.png"
+14	
 _id	"ebd65dc906b0d38c179e9a648577d4a5"
-_rev	"1-8fa8138738006eff4cae4f52c728882c"
+_rev	"2-2c97f63d1905ce50bdd80ada15c298fe"
 treino	"OMBRO"
 nome	"Arnold press"
-16	
+img	"https://cdn.shopify.com/s/files/1/1497/9682/files/1.How_to_Do_The_Arnold_Press.jpg?v=1673014027"
+15	
 _id	"ec6ed91053f7ec3e57599379f64e60f3"
-_rev	"1-2cbfe04c2dc0d4910bdd79ab9230cb7d"
+_rev	"2-ed8b6fb3c133c392cd388be2e03b6022"
 treino	"BICEPS"
 nome	"Bícep curl com Barra W"
-17	
+img	"https://www.treinomestre.com.br/wp-content/uploads/2017/04/rosca-21s-capa.jpg"
+16	
 _id	"ec6ed91053f7ec3e57599379f64e7053"
-_rev	"1-c30e6089646d4680f7d11b7341e11bff"
+_rev	"2-6a7915d099a3cd10ac32a372bda43f44"
 treino	"PANTURRILHA"
 nome	"Elevação de panturrilha em pé"
-18	
+img	"https://pump-app.s3.eu-west-2.amazonaws.com/exercise-assets/13731101-Bodyweight-Standing-Calf-Raise_Calves_small.jpg"
+17	
 _id	"ff625e512f6491ed78d37612a0207728"
-_rev	"1-6eeffcffbebe72eff0045b0e009fd412"
+_rev	"2-41a32c58edaab4e87d1fb7d5ed7154e6"
 treino	"TRICEPS"
 nome	"Trícep Deep"
-19	
+img	"https://qph.cf2.quoracdn.net/main-qimg-ba2ea2a89a75ec936254d085270187a3-lq"
+18	
 _id	"ff625e512f6491ed78d37612a020843f"
-_rev	"1-3fcea4c6ca314a1c02721a9a51b618fd"
+_rev	"2-b456f072f3fb4f47be5c5c0fdff00e09"
 treino	"GLUTEOS"
 nome	"Elevação pélvica"
-20	
+img	"https://treinomestre.com.br/wp-content/uploads/2018/03/exercicio-ponte.jpg"
+19	
 _id	"ffb4d5aefb39578cd627f4db2a80104e"
-_rev	"1-090f6aad438343482134e789685fe0db"
+_rev	"2-87ee80ac739e0dd438f658fa3aa7ff68"
 treino	"DORSAL"
 nome	"Bent Over Row com Barra"
+img	"https://img2.gratispng.com/20180925/wkq/kisspng-bent-over-row-barbell-exercise-weight-training-hantelbck-bung-fitnessriese-5baa148e769518.2836653515378730384857.jpg"
