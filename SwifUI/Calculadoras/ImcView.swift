@@ -7,10 +7,15 @@
 import SwiftUI
 
 struct ImcView: View {
+    
+    //variaveis
+    
     @State private var weight = ""
     @State private var height = ""
     @State private var imc = "IMC"
     @State private var background = Color("Background")
+    
+    //vaalida a entrada
     
     private var isValidInput: Bool {
         if let weight = Double(weight), let height = Double(height), weight > 0, height > 0 {
@@ -33,6 +38,8 @@ struct ImcView: View {
         
         let alturaAoQuadrado = weight/pow(height, 2)
         
+        //exibe a cor de cada categoria
+        
         switch alturaAoQuadrado {
         case 0...18.5:
             background = Color("Baixo peso")
@@ -51,6 +58,8 @@ struct ImcView: View {
     
     var body: some View {
         ZStack{
+            
+            //exibe a tela
             
             VStack {
                 Text("Calculadora de IMC")
