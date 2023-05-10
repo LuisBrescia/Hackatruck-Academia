@@ -1,13 +1,22 @@
+//
+//  TimerView.swift
+//  LoginScreen
+//
+//  Created by StudentBackup01 on 28/04/23.
+//
+
 import SwiftUI
 import AVFoundation
 
 struct TimerView: View {
+    
     @State var timeRemaining = 50
     @State var selectedTime = 0
     @State var timerPaused = true
+    @State var showPicker = false
     @State private var audioPlayer: AVAudioPlayer!
-    @State private var showPicker = false
     @State var alarmEnabled = true
+
     
     func formatTime(_ time: Int) -> String {
         let minutes = time / 60
@@ -19,7 +28,7 @@ struct TimerView: View {
 
         ZStack{
             
-            LinearGradient(gradient: Gradient(colors: [.white]), startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+            LinearGradient(gradient: Gradient(colors: [.white, .white, .gray]), startPoint: .top, endPoint: .bottom).ignoresSafeArea()
             VStack {
                 
                 Text("Timer")
@@ -54,6 +63,7 @@ struct TimerView: View {
                     .padding()
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 
+                
                 HStack() {
                     Spacer()
                     Button(action: {
@@ -67,11 +77,17 @@ struct TimerView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                     }
                     
+               
+                    
                     Button(action: {
                         if timeRemaining == 0 {
                             timeRemaining = selectedTime
                         }
                         timerPaused.toggle()
+                        
+                        if let player = audioPlayer, player.isPlaying {
+                            player.pause()
+                        }
                     }) {
                         Image(systemName: timeRemaining == 0 ? "play.fill" : (timerPaused ? "play.fill" : "pause.fill"))
                             .font(.title)
@@ -79,10 +95,12 @@ struct TimerView: View {
                             .frame(width: 100, height: 100)
                             .background(Color.blue)
                             .clipShape(Circle())
-                        
-                    } .padding(.leading, 28.0)
-                    
+                    }
+                    .padding(.leading, 28.0)
+
+               
                     VStack(alignment: .center) {
+                        
                         Toggle("", isOn: $alarmEnabled)
                             .toggleStyle(SwitchToggleStyle(tint: .blue))
                             .padding(.trailing, 33)
@@ -120,16 +138,21 @@ struct TimerView: View {
                     }
                 }
             }
-        }.toolbar(.hidden, for: .tabBar)
+        }
     }
     
+    
     func resetTimer() {
+        if let player = audioPlayer, player.isPlaying {
+            player.pause()
+        }
         timeRemaining = 50
         selectedTime = 0
         timerPaused = true
         showPicker = false
-        audioPlayer.pause()
     }
+
+    
     
     struct TimerView_Previews: PreviewProvider {
         static var previews: some View {
