@@ -9,10 +9,6 @@ struct Exercicio: Hashable, Codable {
     var _rev: String?
     var treino: String?
     var nome: String?
-    // var series: Int
-    // var carga: Double
-    // var anotacao: String
-    // var foto: String
 }
 
 struct Ficha: Hashable, Codable {
