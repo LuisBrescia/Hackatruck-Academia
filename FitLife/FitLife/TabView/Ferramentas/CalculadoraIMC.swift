@@ -51,13 +51,12 @@ struct CalculadoraIMC: View {
     
     var body: some View {
         ZStack{
-            
             VStack {
                 Text("Calculadora de IMC")
                     .font(.largeTitle)
                     .bold()
-                    .padding(.bottom, 120)
-                    
+                    .padding(.bottom, 60)
+                    .padding(.top, 60)
                 
                 VStack {
                     Text(imc)
@@ -65,21 +64,25 @@ struct CalculadoraIMC: View {
                         .bold()
                     Spacer()
                 }
-                .padding(.bottom, 100)
-                
-                TextField("Altura (metros)", text: $height)
-                    .padding()
-                    .frame(width: 300, height: 50)
-                    .background(Color.black.opacity(0.05))
-                    .cornerRadius(10)
-                    .keyboardType(.decimalPad)
-                
-                TextField("Peso (kg)", text: $weight)
-                    .padding()
-                    .frame(width: 300, height: 50)
-                    .background(Color.black.opacity(0.05))
-                    .cornerRadius(10)
-                    .keyboardType(.decimalPad)
+                .padding(.bottom, 50)
+                VStack{
+                    TextField("Altura (metros)", text: $height)
+                        .padding()
+                        .frame(width: 300, height: 50)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
+                        .keyboardType(.decimalPad)
+                    
+                    TextField("Peso (kg)", text: $weight)
+                        .padding()
+                        .frame(width: 300, height: 50)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
+                        .keyboardType(.decimalPad)
+                }.onTapGesture {
+                    // Chama a função endEditing para remover o teclado
+                    UIApplication.shared.endEditing()
+                }
                 
                 Button(action: calculateImc) {
                     Text("Calcular")
@@ -93,20 +96,28 @@ struct CalculadoraIMC: View {
                 
                 Spacer()
                 
-                
                 Image("tabela-IMC")
                     .resizable()
                     .scaledToFit()
             }
             .padding()
-            }.background(background.edgesIgnoringSafeArea(.all))
-            .toolbar(.hidden, for: .tabBar)
-        }
+        }.background(background.edgesIgnoringSafeArea(.all))
+            .toolbar(.hidden, for: .tabBar).onTapGesture {
+                // Chama a função endEditing para remover o teclado
+                UIApplication.shared.endEditing()
+            }
     }
+}
 
 
 struct ImcCalculatorView_Previews: PreviewProvider {
     static var previews: some View {
         CalculadoraIMC()
+    }
+}
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }

@@ -101,13 +101,14 @@ struct ExibeExercicio: View {
             Text(str.treino!).font(.largeTitle)
             AsyncImage(url: URL(string: str.img!)) { image in
                 image
-                    .resizable().frame(width: 350, height: 350)
+                    .resizable().frame(width: 300, height: 300)
             } placeholder: {
                 ProgressView()
                     .font(.largeTitle).frame(width: 350, height: 350)
             } // Fim do placeholder
             
             Text(str.nome!).font(.title).padding()
+            
             Button { showOptions = true }
         label: {
             VStack {
@@ -119,12 +120,21 @@ struct ExibeExercicio: View {
             } // VStack Button
         } // Label Button
         }.sheet(isPresented: $showOptions) {
-            VStack {
-                Toggle(isOn: $isToggle1On) {Text("Ficha 1")}
-                Toggle(isOn: $isToggle2On) {Text("Ficha 2")}
-                Toggle(isOn: $isToggle3On) {Text("Ficha 3")}
-                Button(action: {showOptions = false}) {Text("OK")}
-            }.padding() // VStack button
+            VStack() {
+                HStack{
+                    Text("Dia A Superiores").padding(.leading, 60.0)
+                    Toggle(isOn: $isToggle1On){}.padding(.trailing, 60.0)
+                }
+                HStack{
+                    Text("Dia B Inferiores").padding(.leading, 60.0)
+                    Toggle(isOn: $isToggle2On){}.padding(.trailing, 60.0)
+                }
+                HStack{
+                    Text("Ficha X").padding(.leading, 60.0)
+                    Toggle(isOn: $isToggle3On){}.padding(.trailing, 60.0)
+                }
+                Button(action: {showOptions = false}) {Text("OK")}.padding(.top, 30.0)
+            }.padding(.horizontal) // VStack button
         }.toolbar(.hidden, for: .tabBar) // VStack página
     }
 }

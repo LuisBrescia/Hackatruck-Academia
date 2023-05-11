@@ -31,7 +31,7 @@ class ViewModel: ObservableObject {
     
     func fetch(){
         // URL da API
-        guard let url = URL(string: "http://127.0.0.1:1880/getfitlife") else {return}
+        guard let url = URL(string: "http://169.254.238.154:1880/getfitlife") else {return}
         
         let task = URLSession.shared.dataTask(with: url){ [weak self]
             data, _, error in

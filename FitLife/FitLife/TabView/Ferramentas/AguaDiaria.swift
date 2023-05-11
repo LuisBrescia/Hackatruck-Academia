@@ -60,6 +60,9 @@ struct AguaDiaria: View {
                 }
                 Spacer()
             }.padding(.top, 50).toolbar(.hidden, for: .tabBar)
+        }.onTapGesture {
+            // Chama a função endEditing para remover o teclado
+            UIApplication.shared.endEditing()
         }
     }
     

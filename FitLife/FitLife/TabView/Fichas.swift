@@ -25,7 +25,7 @@ struct Fichas: View {
             ]
         ),
         Ficha(
-            nome: "Ficha Nova",
+            nome: "Ficha X",
             exercicios: [
                 Exercicio(nome: "Remada Máquina", series: 3, carga: 10, anotacao: ant, foto: fotos[6]),
                 Exercicio(nome: "Rosca Scott", series: 3, carga: 10, anotacao: ant, foto: fotos[7]),
